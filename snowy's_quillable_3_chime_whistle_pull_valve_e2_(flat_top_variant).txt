@@ -1,7 +1,6 @@
 @name Snowy's Quillable 3 Chime Whistle Pull Valve E2 (Flat Top variant)
 @inputs Whistle Quill
 
-
     holoCreate(1)
     holoModel(1,"models/unionsparts/pull_valve2.mdl")
     holoScale(1,vec(1))
@@ -25,29 +24,18 @@
     holoColor(A,vec(36))  
     A=3
     holoCreate(A)
-    holoModel(A,"models/sprops/geometry/t_fdisc_12.mdl")
-    holoScale(A,vec(0.55,0.1,0.55))
+    holoModel(A,"models/unionsparts/1chime.mdl")
+    holoScale(A,vec(0.88,0.88,1))
     holoParent(A,entity())
-    holoPos(A,entity():toWorld(vec(-5,-16.5,0)))
-    holoAng(A, entity():toWorld(ang(0,0,0)))
-    holoEntity(A):setSubMaterial(1,"models/proppertextures/brass")
-    holoEntity(A):setSubMaterial(2,"models/proppertextures/enamel_black")
-    holoEntity(A):setSubMaterial(3,"models/proppertextures/aluminum")
-    holoColor(A,vec(36)) 
-    A=4
-    holoCreate(A)
-    holoModel(A,"models/unionsparts/safties2.mdl")
-    holoScale(A,vec(1,1,1.5))
-    holoParent(A,entity())
-    holoPos(A,entity():toWorld(vec(-5,-13.6,0)))
+    holoPos(A,entity():toWorld(vec(-5,-4.4,0)))
     holoAng(A, entity():toWorld(ang(90,0,90)))
     holoClipEnabled(A,1,1)
-    holoClip(A,1,vec(0,0,0),vec(0,0,1),0)
+    holoClip(A,1,vec(0,0,11.5),vec(0,0,1),0)
     holoEntity(A):setSubMaterial(1,"models/proppertextures/brass")
-    holoEntity(A):setSubMaterial(2,"models/proppertextures/enamel_black")
-    holoEntity(A):setSubMaterial(3,"models/proppertextures/aluminum")
-    holoColor(A,vec(36))    
-    A=5
+    holoEntity(A):setSubMaterial(2,"models/proppertextures/brass")
+    holoEntity(A):setSubMaterial(3,"models/proppertextures/brass")
+    holoColor(A,vec(255))   
+    A=4
     holoCreate(A)
     holoModel(A,"models/sprops/cylinders/size_1/cylinder_1_5x12.mdl")
     holoScale(A,vec(2,2,0.8))
