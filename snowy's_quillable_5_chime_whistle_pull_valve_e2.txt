@@ -42,7 +42,7 @@
     A=5
     holoCreate(A)
     holoModel(A,"models/sprops/cylinders/size_1/cylinder_1_5x12.mdl")
-    holoScale(A,vec(1.4,1.4,0.9))
+    holoScale(A,vec(1.6,1.6,0.9))
     holoParent(A,entity())
     holoPos(A,entity():toWorld(vec(-2,7,0)))
     holoAng(A, entity():toWorld(ang(0,0,-90)))
