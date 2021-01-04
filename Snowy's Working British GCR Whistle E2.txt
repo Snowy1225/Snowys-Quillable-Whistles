@@ -1,0 +1,20 @@
+@name Snowy's Working British GCR Whistle E2
+@inputs Whistle
+
+    A=1
+    holoCreate(A)
+    holoModel(A,"models/zexciv_train_stuff/uk/lner/standard_whistle_gcr.mdl")
+    holoScale(A,vec(1,1,1))
+    holoParent(A,entity())
+    holoPos(A,entity():toWorld(vec(-3,0,0)))
+    holoAng(A, entity():toWorld(ang(180,0,90)))
+    holoEntity(A):setSubMaterial(1,"")
+    holoEntity(A):setSubMaterial(2,"")
+    holoColor(A,vec(36))
+
+
+
+if(Whistle) {holoBodygroup(A,1,1)}
+else{holoBodygroup(A,1,0)}
+
+
